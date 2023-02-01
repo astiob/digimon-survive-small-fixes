@@ -9,7 +9,7 @@ namespace SmallFixPlugin
         public void Awake()
         {
             Logger.LogInfo($"Plugin {pluginGuid} loaded");
-            Harmony.CreateAndPatchAll(typeof(Patches));
+            new Harmony(pluginGuid).PatchAll(typeof(Patches));
         }
 
         public const string pluginGuid = "mods.digimonsurvive.smallfixes";
