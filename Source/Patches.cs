@@ -60,5 +60,35 @@ namespace SmallFixPlugin
 				yield return instruction;
 			}
 		}
+
+		/// <summary>
+		/// Skip <c>ContentMove</c> if it is going to divide by zero.
+		/// <para>
+		/// Without this, opening Menu -> Profile at a 16:10 display
+		/// resolution when exactly seven protagonists are known
+		/// (exactly as many as fits on screen)--namely, after meeting
+		/// Miu but before meeting Kaito--breaks the Profile menu until
+		/// the whole game is restarted: it displays Takuma's portrait
+		/// and Karma compass, but the list of protagonists is empty,
+		/// and while it does react to keyboard/controller buttons
+		/// and thus allows opening and switching profiles,
+		/// the portrait/compass doesn't change.
+		/// </para>
+		/// <para>
+		/// Curiously, this does not happen at 16:9. This is because
+		/// the nested ScrollRect's bounds calculations give an exact
+		/// zero at 16:9, resulting in an eventual 0*Inf = NaN that
+		/// happens to hit a condition that unintentionally guards
+		/// against NaN, whereas at 16:10 they give a small nonzero
+		/// number, causing infinities to propagate forever.
+		/// </para>
+		/// </summary>
+		[HarmonyPatch(typeof(ScrollViewVerticalBase), "ContentMove")]
+		[HarmonyPrefix]
+		public static bool ContentMove_guard(RectTransform ____content, RectTransform ____viewport)
+		{
+			float denominator = ____content.rect.height - ____viewport.rect.height;
+			return denominator != 0;
+		}
 	}
 }
