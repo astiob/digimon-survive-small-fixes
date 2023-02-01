@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using UnityEngine;
 
-namespace VideoFixPlugin
+namespace SmallFixPlugin
 {
 	public class Patches
 	{

@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyName>VideoFixPlugin</AssemblyName>
-    <Description>Fixes freezing/crashing at the end of video cutscenes and improves their scaling to resolutions other than 1920x1080 &amp; 1920x1200.</Description>
-    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>SmallFixPlugin</AssemblyName>
+    <Description>Fixes several miscellaneous glitches.</Description>
+    <TargetFramework>net46</TargetFramework>
     <Company>Chortos-2</Company>
     <Copyright>Made by Chortos-2 on 3 Aug 2022</Copyright>
-    <Product>Video fix BepInEx plugin for Digimon Survive</Product>
+    <Product>Small fix BepInEx plugin for Digimon Survive</Product>
     <Version>1.0.0.0</Version>
   </PropertyGroup>
   <ItemGroup>

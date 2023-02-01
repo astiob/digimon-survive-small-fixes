@@ -1,10 +1,10 @@
 ﻿using BepInEx;
 using HarmonyLib;
 
-namespace VideoFixPlugin
+namespace SmallFixPlugin
 {
     [BepInPlugin(pluginGuid, pluginName, pluginVersion)]
-    public class VideoFixPlugin : BaseUnityPlugin
+    public class SmallFixPlugin : BaseUnityPlugin
     {
         public void Awake()
         {
@@ -12,8 +12,8 @@ namespace VideoFixPlugin
             Harmony.CreateAndPatchAll(typeof(Patches));
         }
 
-        public const string pluginGuid = "mods.digimonsurvive.videofix";
-        public const string pluginName = "Video Fix Plugin";
+        public const string pluginGuid = "mods.digimonsurvive.smallfixes";
+        public const string pluginName = "Small Fix Plugin";
         public const string pluginVersion = "1.0.0.0";
     }
 }
