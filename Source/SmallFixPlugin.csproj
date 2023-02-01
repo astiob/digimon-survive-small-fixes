@@ -4,7 +4,7 @@
     <Description>Fixes several miscellaneous glitches.</Description>
     <TargetFramework>net46</TargetFramework>
     <Company>Chortos-2</Company>
-    <Copyright>Made by Chortos-2 on 3 Aug 2022</Copyright>
+    <Copyright>Made by Chortos-2 in 2022–2023</Copyright>
     <Product>Small fix BepInEx plugin for Digimon Survive</Product>
     <Version>1.0.0.0</Version>
   </PropertyGroup>
