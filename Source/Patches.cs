@@ -39,6 +39,12 @@ namespace SmallFixPlugin
 		/// being used) as it is still in use, causing the game to
 		/// crash-freeze when the video cutscene ends or is skipped.
 		/// </para>
+		/// <para>
+		/// This is probably redundant as of the official patch
+		/// released on 2022-08-08: <c>UpdateCoroutine</c> now
+		/// calls <c>CloseVideo()</c>, and <c>OnDestroy</c>
+		/// swallows exceptions while deleting the file.
+		/// </para>
 		/// </summary>
 		[HarmonyPatch(typeof(uiMovie), "OnDestroy")]
 		[HarmonyPatch(typeof(uiMovie), "UpdateCoroutine", MethodType.Enumerator)]
