@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Reflection.Emit;
+using TMPro;
 using UnityEngine;
 
 namespace SmallFixPlugin
@@ -95,6 +96,29 @@ namespace SmallFixPlugin
 		{
 			float denominator = ____content.rect.height - ____viewport.rect.height;
 			return denominator != 0;
+		}
+
+		/// <summary>
+		/// Avoid clearing text when setting font even if the current
+		/// text contains symbols other than basic Latin writing.
+		/// <para>
+		/// Without this, opening Menu -> Help in CJK languages for
+		/// the first time instantly hides the footnote that says
+		/// "*For default control settings", and it becomes visible
+		/// only after exiting to main menu and opening Help again.
+		/// </para>
+		/// <para>
+		/// I have no idea why this method intentionally clears
+		/// the text in the first place, nor why this is guarded
+		/// by a regex on the current text.
+		/// </para>
+		/// </summary>
+		[HarmonyPatch(typeof(FontComponent), "SetFont")]
+		[HarmonyPrefix]
+		public static bool SetFont_replace(TMP_Text ___tmproText, TMP_FontAsset tmproFont)
+		{
+			___tmproText.font = tmproFont;
+			return false;
 		}
 	}
 }

@@ -12,6 +12,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Digimon Survive\DigimonSurvive_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Digimon Survive\DigimonSurvive_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="UnityEngine.Modules" Version="2019.4.29" IncludeAssets="compile" />
