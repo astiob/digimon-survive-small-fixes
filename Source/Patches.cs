@@ -34,10 +34,10 @@ namespace SmallFixPlugin
 		/// Tell the video player to release its handle on the
 		/// video file before attempting to delete the file.
 		/// <para>
-		/// Without this, deleting the file may be forbidden (depending on
-		/// details of the MP4 splitter/demuxer that ended up being used)
-		/// as it is still in use, causing the game to crash-freeze when
-		/// the video cutscene ends or is skipped.
+		/// Without this, deleting the file may be forbidden (depending
+		/// on details of the MP4 splitter/demuxer that ended up
+		/// being used) as it is still in use, causing the game to
+		/// crash-freeze when the video cutscene ends or is skipped.
 		/// </para>
 		/// </summary>
 		[HarmonyPatch(typeof(uiMovie), "OnDestroy")]
