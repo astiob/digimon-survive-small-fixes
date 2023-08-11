@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>SmallFixPlugin</AssemblyName>
-    <Description>Fixes several miscellaneous glitches.</Description>
+    <AssemblyTitle>Fixes several miscellaneous glitches.</AssemblyTitle>
     <TargetFramework>net46</TargetFramework>
     <Company>Chortos-2</Company>
     <Copyright>Made by Chortos-2 in 2022–2023</Copyright>
