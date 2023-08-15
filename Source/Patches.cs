@@ -102,10 +102,11 @@ namespace SmallFixPlugin
 		/// Avoid clearing text when setting font even if the current
 		/// text contains symbols other than basic Latin writing.
 		/// <para>
-		/// Without this, opening Menu -> Help in CJK languages for
-		/// the first time instantly hides the footnote that says
-		/// "*For default control settings", and it becomes visible
-		/// only after exiting to main menu and opening Help again.
+		/// Without this, opening Menu -> Help for the first time
+		/// in any language other than English, Italian & Spanish
+		/// instantly hides the footnote that says "*For default
+		/// control settings", and it becomes visible only after
+		/// exiting to main menu and opening Help again.
 		/// </para>
 		/// <para>
 		/// I have no idea why this method intentionally clears
