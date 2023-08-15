@@ -1,13 +1,24 @@
-Video fix plugin for Digimon Survive (PC/Steam)
+Small fix plugin for Digimon Survive (PC/Steam)
 ===============================================
 
-This plugin resolves problems with the game's video cutscenes:
+This plugin resolves several game bugs:
 
-  * On some computers, the game freezes/crashes when the video ends or is skipped.
+  * At screen resolutions other than 1920x1080 & 1920x1200,
+    video cutscenes appear pixelated.
 
-  * At screen resolutions other than 1920x1080 & 1920x1200, the video appears pixelated.
+  * At 16:10 screen resolutions, if the Profile menu is opened
+    between meeting Miu and meeting Kaito, it glitches and
+    becomes mostly unusable until Digimon Survive is relaunched.
 
-Tested with Digimon Survive build 8976793 (the current public version as of 2/3 August 2022, released on 29 July 2022).
+  * In many languages, in the Help menu, the "For default control
+    settings" footnote is invisible when the menu is opened for
+    the first time and appears only when the menu is reopened.
+
+  * The first version of the game froze/crashed on some computers
+    when a video cutscene ended or was skipped. This has been
+    fixed in an official update, but this plugin includes
+    an independent (but similar) fix as a precaution, which
+    works equally well on old and new versions of the game.
 
 
 Installing
@@ -30,7 +41,7 @@ Installing
 
 3. Create a "plugins" folder inside the BepInEx folder.
 
-4. Put VideoFixPlugin.dll in the plugins folder inside the BepInEx folder.
+4. Put SmallFixPlugin.dll in the plugins folder inside the BepInEx folder.
 
 5. Simply start the game and enjoy.
 
