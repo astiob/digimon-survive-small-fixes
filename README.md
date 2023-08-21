@@ -46,6 +46,14 @@ Installing
 5. Simply start the game and enjoy.
 
 
+Upgrading from VideoFixPlugin.dll
+---------------------------------
+
+In an earlier version, this plugin was known as the “video fix plugin”.
+If you have VideoFixPlugin.dll installed, you can delete it now
+(but it is equally safe to keep it).
+
+
 Combining with other mods
 -------------------------
 
