@@ -24,9 +24,15 @@ This plugin resolves several game bugs:
 Installing
 ----------
 
-1. Download BepInEx 5 x64 from https://github.com/BepInEx/BepInEx/releases
+ 1. In your Steam Library, right-click Digimon Survive (or click the gear
+    button for Digimon Survive) and select Manage → Browse Local Files
+    or Properties → Local Files → Browse. This will open the game’s
+    file folder.
 
-2. Unpack BepInEx into the root folder of the game, so that the folder looks like this:
+ 2. Download BepInEx 5 x64 from https://github.com/BepInEx/BepInEx/releases
+
+ 3. Copy/extract BepInEx into the game’s folder,
+    so that the folder looks like this:
 
         BepInEx
         DigimonSurvive_Data
@@ -39,11 +45,17 @@ Installing
         UnityPlayer.dll
         winhttp.dll
 
-3. Create a “plugins” folder inside the BepInEx folder.
+ 4. Create a “plugins” folder inside the BepInEx folder.
 
-4. Put SmallFixPlugin.dll in the plugins folder inside the BepInEx folder.
+ 5. Copy/extract SmallFixPlugin.dll into the plugins folder.
 
-5. Simply start the game and enjoy.
+ 6. If you’re using Linux/Proton (including Steam Deck), open Digimon Survive
+    in your Steam Library, press the gear button, select Properties, and put
+    this in Launch Options:
+
+        WINEDLLOVERRIDES="winhttp=n,b" %command%
+
+That’s it. The mod will be active whenever you launch the game.
 
 
 Upgrading from VideoFixPlugin.dll

@@ -1,7 +1,15 @@
-This mod/plugin was developed by Chortos-2 and released on 3 August 2022.
+This mod/plugin was developed by Chortos-2 in 2022-2023.
+This is version 1.1, released on 22 August 2023.
+
 I can be contacted at:
   * chortos@inbox.lv
   * https://steamcommunity.com/id/astiob/
   * https://chortos.selfip.net/~astiob/me#contact
 
-I have no affiliation to the original developers of the game, the video player it uses, BepInEx, or Steam, nor to any of the copyright owners of the franchise.
+I have no affiliation to the original developers of
+the game, the video player it uses, BepInEx, or Steam,
+nor to any of the copyright owners of the franchise.
+
+Official developers of the game are free and encouraged to incorporate
+my improvements back into the official game. No attribution or compensation
+is required, although I would be happy to receive some.
