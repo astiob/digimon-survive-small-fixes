@@ -71,3 +71,11 @@ Combining with other mods
 
 This can be combined with other mods, including other BepInEx plugins.
 Just put all your BepInEx plugins in the same plugins folder.
+
+
+Updates
+-------
+
+Find the latest version at:
+  * https://gamebanana.com/mods/393721
+  * https://github.com/astiob/digimon-survive-small-fixes
