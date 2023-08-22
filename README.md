@@ -3,6 +3,9 @@ Small fix plugin for Digimon Survive (PC/Steam)
 
 This plugin resolves several game bugs:
 
+  * With Turkish regional settings in Windows, the game gets stuck
+    during startup: it shows only a black screen and is unplayable.
+
   * At 16:10 screen resolutions, if the Profile menu is opened
     between meeting Miu and meeting Kaito, it glitches and
     becomes mostly unusable until Digimon Survive is relaunched.
