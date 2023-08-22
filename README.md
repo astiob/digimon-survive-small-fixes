@@ -3,9 +3,6 @@ Small fix plugin for Digimon Survive (PC/Steam)
 
 This plugin resolves several game bugs:
 
-  * At screen resolutions other than 1920×1080 & 1920×1200,
-    video cutscenes appear pixelated.
-
   * At 16:10 screen resolutions, if the Profile menu is opened
     between meeting Miu and meeting Kaito, it glitches and
     becomes mostly unusable until Digimon Survive is relaunched.
@@ -13,6 +10,9 @@ This plugin resolves several game bugs:
   * In many languages, in the Help menu, the “For default control
     settings” footnote is invisible when the menu is opened for
     the first time and appears only when the menu is reopened.
+
+  * At screen resolutions other than 1920×1080 & 1920×1200,
+    video cutscenes appear pixelated.
 
   * The first version of the game froze/crashed on some computers
     when a video cutscene ended or was skipped. This has been
