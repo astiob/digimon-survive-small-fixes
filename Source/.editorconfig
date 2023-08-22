@@ -1,2 +1,5 @@
 [*.{config,cs,xml}]
 end_of_line = lf
+
+[*.cs]
+indent_style = tab
